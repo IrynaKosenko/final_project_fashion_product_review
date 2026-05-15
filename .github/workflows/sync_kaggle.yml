@@ -5,6 +5,9 @@ on:
     # Запускається кожні 30 хвилин
     - cron: "*/30 * * * *"
   workflow_dispatch: # Дозволяє запуск вручну
+  
+permissions:
+  contents: write 
 
 jobs:
   sync:
