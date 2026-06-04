@@ -40,7 +40,7 @@ jobs:
           KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
         run: |
           mkdir -p notebooks
-          kaggle kernels pull "$KAGGLE_USERNAME/final-project-kosenko" \
+          kaggle kernels pull "$KAGGLE_USERNAME/fashion-product-review \
             --path notebooks
 
       - name: Commit and push if changed
